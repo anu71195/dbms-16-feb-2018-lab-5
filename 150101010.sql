@@ -86,7 +86,7 @@ group by department_id) as table_2, Department as D
 where D.department_id=table_2.department_id) AS table_3
 on table_3.name=D.name
 where table_3.name IS NULL
-
+;
 
 
 
@@ -178,7 +178,7 @@ select letter, count(course_id) as course_id_number FROM
 (select letter, course_id FROM
 ScheduledIn) as table_1
 group by letter) as table_2
-)
+);
 
 
 
