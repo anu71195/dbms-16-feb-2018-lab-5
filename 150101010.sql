@@ -1,5 +1,5 @@
 
-SELECT course_id FROM ScheduledIn
+SELECT distinct course_id FROM ScheduledIn
 WHERE room_number='2001';
 
 
@@ -10,7 +10,7 @@ WHERE room_number='2001';
 
 
 
-SELECT course_id FROM ScheduledIn
+SELECT distinct course_id FROM ScheduledIn
 WHERE letter='C';
 
 
@@ -23,7 +23,7 @@ WHERE letter='C';
 
 
 
-SELECT division FROM ScheduledIn
+SELECT distinct division FROM ScheduledIn
 WHERE room_number='L2' or room_number='L3';
 
 
@@ -128,7 +128,7 @@ HAVING count(letter)=17;
 
 select * from 
 (select letter, count(course_id) as course_id_number FROM
-(select letter, course_id FROM
+(select distinct letter, course_id FROM
 ScheduledIn) as table_1
 group by letter) as table_2
 order by course_id_number;
