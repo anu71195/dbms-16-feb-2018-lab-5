@@ -558,17 +558,17 @@ INSERT INTO Slot(letter, day, start_time, end_time) VALUES('A','Monday','08:00:0
 
 INSERT INTO Department(department_id , name) VALUES ('CS','Computer Science and Engineering'),
  ('RT','Centre for Rural Technology'),
- ('EE','Electronics and Electrical Engineering'),
- ('ME','Mechanical Engineering'),
- ('CE','Civil Engineering'),
- ('DD','Design'),
- ('BT','Biosciences and Bioengineering'),
- ('CL','Chemical Engineering'),
- ('PH','Physics'),
- ('CH','Chemistry'),
- ('MA','Mathematics'),
- ('HS','Humanities and Social Sciences'),
- ('EN','English');
+ ('EE','Department of Electronics and Electrical Engineering'),
+ ('ME','Department of Mechanical Engineering'),
+ ('CE','Department of Civil Engineering'),
+ ('DD','Department of Design'),
+ ('BT','Department of Biosciences and Bioengineering'),
+ ('CL','Department of Chemical Engineering'),
+ ('PH','Department of Physics'),
+ ('CH','Department of Chemistry'),
+ ('MA','Department of Mathematics'),
+ ('HS','Department of Humanities and Social Sciences'),
+ ('EN','Centre for Energy');
 
 
 
