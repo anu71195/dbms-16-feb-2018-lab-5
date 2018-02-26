@@ -9,7 +9,7 @@ CREATE TABLE Course(
 
 CREATE TABLE Department(
 	department_id VARCHAR(10) COMMENT 'department_id will range 2 to 4 so keep an upper bound 10 is used',
-	name VARCHAR(50) COMMENT 'The name of the department can be as long as it can be so keeping the upper bound to be 50',
+	name VARCHAR(100) COMMENT 'The name of the department can be as long as it can be so keeping the upper bound to be 100',
 	PRIMARY KEY (department_id) COMMENT 'Every department will be have unique id and name'
 
 );
@@ -27,7 +27,7 @@ CREATE TABLE Room(
 );
 CREATE TABLE ScheduledIn(
 	course_id VARCHAR(10) NOT NULL COMMENT 'course_id will be of maximum length and can contian both characters and number so puttin a bound on it 10 is safe',
-	division enum ('I','II','III','IV','NA') COMMENT 'division will be either I , II, III, IV,NA',
+	division enum ('I','II','III','IV','NA') default 'NA' COMMENT 'division will be either I , II, III, IV,NA',
 	letter enum('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H','I', 'J', 'K', 'L', 'A1', 'B1', 'C1', 'D1', 'E1') COMMENT 'letter can take the value from the given enum set',
 	day enum('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday') COMMENT 'day can take the value from the given enum set',
 	department_id VARCHAR(10) NOT NULL COMMENT 'department_id will range 2 to 4 so keep an upper bound 10 is used',
